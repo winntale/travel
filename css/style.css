@@ -1,12 +1,8 @@
-
-
-
 *, *:after, *:before {
    box-sizing: border-box;
    padding: 0;
    margin: 0;
    transition-duration: .5s;
-   font-family: url(DolomanPavljenko.otf)
 }
 
 ul {
@@ -19,13 +15,13 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: doloman pavljenko;
+   font-family: 'Doloman Pavljenko', arial;
    font-weight: normal;
    letter-spacing: 0.1vw;
 }
 
 body {
-   font-family: doloman pavljenko;
+   font-family: 'Doloman Pavljenko', arial;
    font-size: 150%;
    line-height: 1;
    color: #373737;
