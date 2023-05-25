@@ -401,7 +401,7 @@ header.scrolled {
 }
 
 #background_travel {
-   background-image: url(travel/main_page/photo/main.jpg);
+   background-image: url(../main_page/photo/main.jpg);
 }
 
 .backgrounds_countries_odd {
@@ -428,16 +428,16 @@ header.scrolled {
    background-position: center center;
 }
 
-#background_turkey {background-image: url(/main_page/photo/countries_photo/turkey.png)}
+#background_turkey {background-image: url(../main_page/photo/countries_photo/turkey.png)}
 #background_oae {background-image: url(../main_page/photo/countries_photo/oae.png)}
-#background_egypt {background-image: url(/travel/main_page/photo/countries_photo/egypt.png)}
-#background_greece {background-image: url(../travel/main_page/photo/countries_photo/greece.png)}
-#background_italy {background-image: url(./travel/main_page/photo/countries_photo/italy.png)}
-#background_france {background-image: url(./main_page/photo/countries_photo/france.png)}
-#background_china {background-image: url(/photo/countries_photo/china.png)}
-#background_korea {background-image: url(photo/countries_photo/korea.png)}
-#background_vietnam {background-image: url(main_page/photo/countries_photo/vietnam.png)}
-#background_japan {background-image: url(main_page/photo/countries_photo/japan.png)}
+#background_egypt {background-image: url(../main_page/photo/countries_photo/egypt.png)}
+#background_greece {background-image: url(../main_page/photo/countries_photo/greece.png)}
+#background_italy {background-image: url(../main_page/photo/countries_photo/italy.png)}
+#background_france {background-image: url(../main_page/photo/countries_photo/france.png)}
+#background_china {background-image: url(../main_page/photo/countries_photo/china.png)}
+#background_korea {background-image: url(../main_page/photo/countries_photo/korea.png)}
+#background_vietnam {background-image: url(../main_page/photo/countries_photo/vietnam.png)}
+#background_japan {background-image: url(../main_page/photo/countries_photo/japan.png)}
 
 
 /* Кнопки, текста */
@@ -577,7 +577,7 @@ header.scrolled {
    min-height: 100vb;
    display: grid;
    grid-template-rows: 10vb 7vb 25vb 22vb;
-   background: url(/main_page/photo/reviews/background_reviews.jpg) no-repeat;
+   background: url(../main_page/photo/reviews/background_reviews.jpg) no-repeat;
    background-size: cover;
    background-position: center center;
 }
@@ -655,7 +655,7 @@ header.scrolled {
 }
 
 .footer-main {
-   background: url(/main_page/photo/footer.jpg) no-repeat;
+   background: url(../main_page/photo/footer.jpg) no-repeat;
    background-size: 100%;
    height: 90vb;
 }
@@ -884,16 +884,16 @@ header.scrolled {
       grid-template-columns: 33vw 40vw 122px;
     }
 
-    #background_turkey {background-image: url(/main_page/photo/phone_adaptation/turkey_phone1.jpg)}
-    #background_oae {background-image: url(/main_page/photo/phone_adaptation/oae_phone1.jpg)}
-    #background_egypt {background-image: url(/main_page/photo/phone_adaptation/egypt_phone.jpg)}
-    #background_greece {background-image: url(/main_page/photo/phone_adaptation/greece_phone.jpg)}
-    #background_italy {background-image: url(/main_page/photo/phone_adaptation/italy_phone.jpg)}
-    #background_france {background-image: url(/main_page/photo/phone_adaptation/france_phone.jpg)}
-    #background_china {background-image: url(/main_page/photo/phone_adaptation/china_phone.jpg)}
-    #background_korea {background-image: url(/main_page/photo/phone_adaptation/korea_phone.jpg)}
-    #background_vietnam {background-image: url(/main_page/photo/phone_adaptation/vietnam_phone.jpg)}
-    #background_japan {background-image: url(/main_page/photo/phone_adaptation/japan_phone.jpg)}
+    #background_turkey {background-image: url(../main_page/photo/phone_adaptation/turkey_phone1.jpg)}
+    #background_oae {background-image: url(../main_page/photo/phone_adaptation/oae_phone1.jpg)}
+    #background_egypt {background-image: url(../main_page/photo/phone_adaptation/egypt_phone.jpg)}
+    #background_greece {background-image: url(../main_page/photo/phone_adaptation/greece_phone.jpg)}
+    #background_italy {background-image: url(../main_page/photo/phone_adaptation/italy_phone.jpg)}
+    #background_france {background-image: url(../main_page/photo/phone_adaptation/france_phone.jpg)}
+    #background_china {background-image: url(../main_page/photo/phone_adaptation/china_phone.jpg)}
+    #background_korea {background-image: url(../main_page/photo/phone_adaptation/korea_phone.jpg)}
+    #background_vietnam {background-image: url(../main_page/photo/phone_adaptation/vietnam_phone.jpg)}
+    #background_japan {background-image: url(../main_page/photo/phone_adaptation/japan_phone.jpg)}
 
     .text2-countries {
       font-size: 24px;
