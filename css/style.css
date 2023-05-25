@@ -428,16 +428,16 @@ header.scrolled {
    background-position: center center;
 }
 
-#background_turkey {background-image: url(/main_page/photo/countries_photo/turkey.png)}
-#background_oae {background-image: url(/main_page/photo/countries_photo/oae.png)}
-#background_egypt {background-image: url(/main_page/photo/countries_photo/egypt.png)}
-#background_greece {background-image: url(/main_page/photo/countries_photo/greece.png)}
-#background_italy {background-image: url(/main_page/photo/countries_photo/italy.png)}
-#background_france {background-image: url(/main_page/photo/countries_photo/france.png)}
-#background_china {background-image: url(/main_page/photo/countries_photo/china.png)}
-#background_korea {background-image: url(/main_page/photo/countries_photo/korea.png)}
-#background_vietnam {background-image: url(/main_page/photo/countries_photo/vietnam.png)}
-#background_japan {background-image: url(/main_page/photo/countries_photo/japan.png)}
+#background_turkey {background-image: url(main_page/photo/countries_photo/turkey.png)}
+#background_oae {background-image: url(main_page/photo/countries_photo/oae.png)}
+#background_egypt {background-image: url(main_page/photo/countries_photo/egypt.png)}
+#background_greece {background-image: url(main_page/photo/countries_photo/greece.png)}
+#background_italy {background-image: url(main_page/photo/countries_photo/italy.png)}
+#background_france {background-image: url(main_page/photo/countries_photo/france.png)}
+#background_china {background-image: url(main_page/photo/countries_photo/china.png)}
+#background_korea {background-image: url(main_page/photo/countries_photo/korea.png)}
+#background_vietnam {background-image: url(main_page/photo/countries_photo/vietnam.png)}
+#background_japan {background-image: url(main_page/photo/countries_photo/japan.png)}
 
 
 /* Кнопки, текста */
