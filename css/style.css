@@ -1,13 +1,12 @@
-@font-face {
-   font-family: "doloman pavljenko";
-   src: url(/DolomanPavljenko.otf);
-}
+
+
 
 *, *:after, *:before {
    box-sizing: border-box;
    padding: 0;
    margin: 0;
    transition-duration: .5s;
+   font-family: url(DolomanPavljenko.otf)
 }
 
 ul {
