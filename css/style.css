@@ -401,7 +401,7 @@ header.scrolled {
 }
 
 #background_travel {
-   background-image: url(main_page/photo/main.jpg);
+   background-image: url(./main_page/photo/main.jpg);
 }
 
 .backgrounds_countries_odd {
