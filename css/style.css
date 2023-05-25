@@ -1,3 +1,8 @@
+@font-face {
+   font-family: 'Doloman Pavljenko', arial;
+   src: url(../DolomanPavljenko.woff2) format('woff2'), url(../DolomanPavljenko.otf) format('otf');
+}
+
 *, *:after, *:before {
    box-sizing: border-box;
    padding: 0;
@@ -971,5 +976,31 @@ header.scrolled {
    
    .outset-logos:hover {
       transform: scale(1.1);
+   }
+ }
+
+ @media (max-aspect-ratio: 7/9) {
+   .reviews-info {
+      width: 340px;
+      height: 132px;
+      margin: 0 auto;
+      transition: block;
+      grid-row: 4;
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+      display: grid;
+      grid-template-rows: 2vb 3vb 4.5vb 4.5vb 1.5vb;
+   }
+
+    #reviews-info-text1 {
+      font-size: 25px;
+    }
+    #reviews-info-text2 {
+      font-size: 20px;
+    }
+
+    #reviews-button {
+      width: 130px;
+      font-size: 18px;
    }
  }
