@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Трэвел.ру</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+  <div class="background_main" id="background_travel">
+    <h1 id="text-travel">Трэвел.ру</h1>
+    <h2 id="text-under-travel">сайт планирования своего отдыха</h2>
+    <header>
+        <nav class="container">
+          <a class="logo" href="" title="Переход на главную страницу">
+            <img src="main_page/photo/logo.png" alt="img">
+          </a>
+          <div class="burger"><span></span></div>
+          <form id="searchform">
+            <input class="search-text" id="text-to-find" value="" placeholder="Искать на странице..">
+            <button class="clear-button" type="submit" onclick="FindOnPage('text-to-find',false); return false;"><i class="fa-solid fa-xmark"></i></button>
+            <button class="submit-button" type="submit" onclick="FindOnPage('text-to-find',true); return false;"><i class="fa fa-search"></i></button>
+          </form>
+          <ul id="menu">
+            <li><a class="menu_element" href="\" title="Вернуться главную страницу">Главная</a></li>
+            <li><a class="menu_element" href="/sitemap.html" title="Просмотреть карту сайта">Карта сайта</a></li>
+            <li>
+              <a class="menu_element">Каталог стран</a>
+              <ul>
+                <li><a href="#background_turkey" title="Турция в каталоге стран">Турция</a></li>
+                <li><a href="#background_oae" title="ОАЭ в каталоге стран">ОАЭ</a></li>
+                <li><a href="#background_egypt" title="Египет в каталоге стран">Египет</a></li>
+                <li><a href="#background_greece" title="Греция в каталоге стран">Греция</a></li>
+                <li><a href="#background_italy" title="Италия в каталоге стран">Италия</a></li>
+                <li><a href="#background_france" title="Франция в каталоге стран">Франция</a></li>
+                <li><a href="#background_china" title="Китай в каталоге стран">Китай</a></li>
+                <li><a href="#background_korea" title="Корея в каталоге стран">Корея</a></li>
+                <li><a href="#background_vietnam" title="Вьетнам в каталоге стран">Вьетнам</a></li>
+                <li><a href="#background_japan" title="Япония в каталоге стран">Япония</a></li>
+              </ul>
+            </li>
+            <li><a class="menu_element" href="#partners" title="Блок с ссылками на партнёров-спонсоров">Партнёры</a></li>
+            <li><a class="menu_element" href="#reviews" title="Отзывы о компании">Отзывы</a></li>
+            <li>
+              <a class="menu_element">Компания</a>
+              <ul>
+                <li><a href="/about-us.html" title="Подробнее о нашей компании">О нас</a></li>
+                <li><a style="font-size: 18px" href="/feedback.html" title="Ссылка для связи с нами">Обратная связь</a></li>
+                <li><a href="/qna.html" title="Ответы на часто задаваемые вопросы">Q&A</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
+  </div>
+
+  <div class="outset">
+    <div class="outset-column">
+      <figure>
+        <a href="https://www.tutu.ru" title="Ссылка на сайт Туту.ру" target="_blank">
+          <img class="outset-logos" src="main_page/photo/partners/tutu.png" alt="img">
+        </a>
+        <figcaption class="outset-text1-info">tutu</figcaption>
+        <figcaption class="outset-text2-info">сервис продажи билетов на поезда и самолёты</figcaption>
+      </figure>
+    </div>
+
+    <div class="outset-column">
+      <figure>
+        <a href="https://www.aviasales.ru" title="Ссылка на сайт Авиасейлс.ру" target="_blank">
+          <img class="outset-logos" src="main_page/photo/partners/aviasales.png" alt="img">
+        </a>
+        <figcaption class="outset-text1-info">aviasales</figcaption>
+        <figcaption class="outset-text2-info">метапоисковик авиабилетов</figcaption>
+      </figure>
+    </div>
+
+    <div class="outset-column">
+      <figure>
+        <a href="https://pegas-turistik.ru" title="Ссылка на сайт Пегас-Туристик.ру" target="_blank">
+          <img class="outset-logos" src="main_page/photo/partners/pegas_touristik.png" alt="img">
+        </a>
+        <figcaption class="outset-text1-info">pegas touristik</figcaption>
+        <figcaption class="outset-text2-info">популярное российское турагенство</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="backgrounds_countries_odd" id="background_turkey">
+    <a class="buttons-countries-odd" href="turkey/turkey.html" title="Подробнее о Турции">Подробнее...</a>
+    <h1 class="text1-countries">Турция </h1>
+    <h2 class="text2-countries">Эталон пляжного отдыха. Многие до сих пор сравнивают условия и сервис других направлений именно с этой страной!</h2>
+  </div>
+  <div class="backgrounds_countries_even" id="background_oae">
+    <a class="buttons-countries-even" style="top: 188vb" href="oae/oae.html" title="Подробнее об ОАЭ">Подробнее...</a>
+    <h1 class="text1-countries">ОАЭ </h1>
+    <h2 class="text2-countries">Символ роскоши и высоких технологий. Пальмовые рощи, бутики, райские острова с белоснежными пляжами, всё это ждёт Вас в Эмиратах!</h2>
+  </div>
+  <div class="backgrounds_countries_odd" id="background_egypt">
+    <a class="buttons-countries-odd" href="egypt/egypt.html" title="Подробнее о Египте">Подробнее...</a>
+    <h1 class="text1-countries">Египет </h1>
+    <h2 class="text2-countries">Страна древних пирамид на берегу Красного и Средиземного морей. Посмотрите на единственное сохранившееся в мире чудо света, песчаные и галечные пляжи и коралловые рифы!
+    </h2>
+  </div>
+  <div class="backgrounds_countries_even" id="background_greece">
+    <a class="buttons-countries-even" style="top: 288vb" href="greece/greece.html" title="Подробнее о Греции">Подробнее...</a>
+    <h1 class="text1-countries">Греция </h1>
+    <h2 class="text2-countries">Роскошные пляжи, прозрачные воды Средиземного моря, множество удивительных памятников архитектуры, великолепная кухня и уютные отели. И это только малая часть того, что Вы здесь увидите!
+    </h2>
+  </div>
+  <div class="backgrounds_countries_odd" id="background_italy">
+    <a class="buttons-countries-odd" href="italy/italy.html" title="Подробнее об Италии">Подробнее...</a>
+    <h1 class="text1-countries">Италия </h1>
+    <h2 class="text2-countries">Памятники времен Рима, очаровывающая романтика Венеции, холмистая панорама Тосканы, южные склоны Альп, чудесная природа, солнце, море, воздух – всё это Италия!</h2>
+  </div>
+  <div class="backgrounds_countries_even" id="background_france">
+    <a class="buttons-countries-even" style="top: 388vb" href="france/france.html" title="Подробнее о Франции">Подробнее...</a>
+    <h1 class="text1-countries">Франция </h1>
+    <h2 class="text2-countries">Изысканная и пикантная страна, не перестающая удивлять и восхищать. Кто хоть однажды побывал во Франции, почувствовал её неповторимый дух и аромат, тот будет стремиться сюда вновь и вновь!</h2>
+  </div>
+  <div class="backgrounds_countries_odd" id="background_china">
+    <a class="buttons-countries-odd" href="china/china.html" title="Подробнее о Китае">Подробнее...</a>
+    <h1 class="text1-countries">Китай </h1>
+    <h2 class="text2-countries">Одна из самых удивительных и загадочных стран мира. Родина бумаги, пороха и компаса и многого другого, он неизменно приковывает к себе внимание исследователей и путешественников!</h2>
+  </div>
+  <div class="backgrounds_countries_even" id="background_korea">
+    <a class="buttons-countries-even" style="top: 488vb" href="korea/korea.html" title="Подробнее о Корее">Подробнее...</a>
+    <h1 class="text1-countries">Корея </h1>
+    <h2 class="text2-countries">Страна белоснежных пляжей и целебных минеральных источников, горнолыжных курортов и прекрасно сохранившихся памятников. Красивая и процветающая, она всё больше привлекает туристов!</h2>
+  </div>
+  <div class="backgrounds_countries_odd" id="background_vietnam">
+    <a class="buttons-countries-odd" href="vietnam/vietnam.html" title="Подробнее о Вьетнаме">Подробнее...</a>
+    <h1 class="text1-countries">Вьетнам </h1>
+    <h2 class="text2-countries">На сегодняшний день Вьетнам является одним из самых популярных государств среди любителей экзотического отдыха. Здесь ошеломительные природные достопримечательности и райские тёплые пляжи!</h2>
+  </div>
+  <div class="backgrounds_countries_even" id="background_japan">
+    <a class="buttons-countries-even" style="top: 588vb" href="japan/japan.html" title="Подробнее о Японии">Подробнее...</a>
+    <h1 class="text1-countries">Япония </h1>
+    <h2 class="text2-countries">Одно из самых развитых государств мира с тысячелетней историей, самобытной культурой и традициями. Это страна контрастов: от возделывающей рис сельской глубинки до многомиллионного Токио</h2>
+  </div>
+
+  <div id="partners">
+    <h1 id="partners-text-main">Партнёры</h1>
+    <div class="partners-space">
+      <div class="partners-column">
+        <figure>
+          <a href="https://www.tutu.ru" title="Ссылка на сайт Туту.ру" target="_blank">
+            <img class="partners-logos" src="main_page/photo/partners/tutu-black.png" alt="img">
+          </a>
+          <figcaption class="partners-text1-info">tutu</figcaption>
+          <figcaption class="partners-text2-info">сервис продажи билетов на поезда и самолёты</figcaption>
+        </figure>
+      </div>
+
+      <div class="partners-column">
+        <figure>
+          <a href="https://www.aviasales.ru" title="Ссылка на сайт Авиасейлс.ру" target="_blank">
+            <img class="partners-logos" src="main_page/photo/partners/aviasales-black.png" alt="img">
+          </a>
+          <figcaption class="partners-text1-info">aviasales</figcaption>
+          <figcaption class="partners-text2-info">метапоисковик авиабилетов</figcaption>
+        </figure>
+      </div>
+
+      <div class="partners-column">
+        <figure>
+          <a href="https://pegas-turistik.ru" title="Ссылка на сайт Пегас-Туристик.ру" target="_blank">
+            <img class="partners-logos" src="main_page/photo/partners/pegas_touristik.png" alt="img">
+          </a>
+          <figcaption class="partners-text1-info">pegas touristik</figcaption>
+          <figcaption class="partners-text2-info">популярное российское турагенство</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews" id="reviews">
+    <h1 id="reviews-text-main">Отзывы</h1>
+    <div class="reviews-info">
+      <h1 id="reviews-info-text1">Здесь пока нет ни одного отзыва</h1>
+      <h2 id="reviews-info-text2">будьте первым, кто его оставит</h2>
+      <a id="reviews-button" href="/reviews.html"Напишите отзыв о нас">Оставить отзыв</a>
+    </div>
+  </div>
+  
+  <a class="buttons-top-footer" id="toFooter" style="rotate: 180deg" href="#bottom" title="Перейти к низу страницы">^</a>
+  <a class="buttons-top-footer" id="toTop" href="#background_travel" title="Перейти к верху страницы">^</a>
+
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h1 style="margin-left: 30px">Каталог стран</h1>
+          <ul style="margin-left: 30px">
+            <li><a href="/turkey/turkey.html" title="Подробнее о Турции">- Турция</a></li>
+            <li><a href="/oae/oae.html" title="Подробнее об ОАЭ">- ОАЭ</a></li>
+            <li><a href="/egypt/egypt.html" title="Подробнее о Египте">- Египет</a></li>
+            <li><a href="/greece/greece.html" title="Подробнее о Греции">- Греция</a></li>
+            <li><a href="/italy/italy.html" title="Подробнее об Италии">- Италия</a></li>
+            <li><a href="/france/france.html" title="Подробнее о Франции">- Франция</a></li>
+            <li><a href="/china/china.html" title="Подробнее о Китае">- Китай</a></li>
+            <li><a href="/korea/korea.html" title="Подробнее о Корее">- Корея</a></li>
+            <li><a href="/vietnam/vietnam.html" title="Подробнее о Вьетнаме">- Вьетнам</a></li>
+            <li><a id="bottom" href="/japan/japan.html" title="Подробнее о Японии">- Япония</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h1>Компания</h1>
+          <ul>
+            <li><a href="/reviews.html" title="Напишите отзыв о нас">- Отзывы</a></li>
+            <li><a href="/about-us.html" title="Подробнее о компании">- О нас</a></li>
+            <li><a href="/feedback.html" title="Ссылка для связи с нами">- Обратная связь</a></li>
+            <li><a href="/qna.html" title="Ответы на часто задаваемые вопросы">- Q&A</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h1 style="margin-left: 30px">Партнёры</h1>
+          <ul style="margin-left: 30px">
+            <li><a href="https://www.tutu.ru" title="Ссылка на сайт Туту.ру">- Туту</a></li>
+            <li><a href="https://www.aviasales.ru" title="Ссылка на сайт Авиасейлс.ру">- Авиасейлс</a></li>
+            <li><a href="https://pegas-turistik.ru" title="Ссылка на сайт Пегас-Туристик.ру">- Пегас туристик</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h1>Контактная информация</h1>
+          <div class="social-links">
+            <a class="social-media" href="https://vk.com/nnbezgalochki" title="Группа компании ВКонтакте" target="_blank"><i class="fab fa-vk"></i></a>
+            <a class="social-media" href="https://web.telegram.org" title="Группа компании в телеграме" target="_blank"><i class="fa fa-solid fa-paper-plane"></i></a>
+            <a class="social-media" href="https://www.youtube.com" title="Канал компании на YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-media" href="https://ok.ru/" title="Группа компании в одноклассниках" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+            <h4 style="color: #fff; padding-bottom: 10px"><i class="fa fa-solid fa-envelope"></i> travel.ru@yandex.ru</h4>
+            <h4 style="color: #fff"><i class="fa fa-solid fa-phone"></i> +79876543210</h4>
+            <a href="\" title="Вернуться на Главную страницу" style="color: #fff; line-height: 70px; margin-left: 15 0px"><i class="fa fa-home"></i></a>
+            <a href="/sitemap.html" title="Просмотреть карту сайта" style="color: #fff; line-height: 70px;"><i class="fa fa-sitemap"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="/js/search.js" defer></script>
+<script src="/js/menu.js" defer></script>
+</body>
+</html>
