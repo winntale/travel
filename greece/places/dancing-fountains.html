@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Трэвел.ру</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/countries.css">
+  <link rel="stylesheet" type="text/css" href="/css/places.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="background_countries" id="background_main" style="background-image: url(photo/dancing-fountains/main.jpg)" alt="img">
+  <h1 id="text-travel">Танцующие фонтаны</h1>
+  <ul class="chain-links">
+      <li><a href="\" title="Переход на Главную страницу">Главная</a></li>
+      <li><a href="/oae/oae.html" title="Подробнее об ОАЭ">ОАЭ</a></li>
+      <li><a href="/oae/oae.html#places-oae" title="Места ОАЭ">Места</a></li>
+      <li>Танцующие фонтаны</li>
+  </ul>
+  <header>
+      <nav class="container">
+          <a class="logo" href="\" title="Переход на Главную страницу">
+          <img src="/main_page/photo/logo.png" alt="img">
+          </a>
+          <div class="burger"><span></span></div>
+          <form id="searchform">
+              <input class="search-text" id="text-to-find" value="" placeholder="Искать на странице..">
+              <button class="clear-button" type="submit" onclick="FindOnPage('text-to-find',false); return false;"><i class="fa-solid fa-xmark"></i></button>
+              <button class="submit-button" type="submit" onclick="FindOnPage('text-to-find',true); return false;"><i class="fa fa-search"></i></button>
+          </form>
+          <ul id="menu">
+            <li><a class="menu_element" href="\" title="Вернуться главную страницу">Главная</a></li>
+            <li><a class="menu_element" href="/sitemap.html" title="Просмотреть карту сайта">Карта сайта</a></li>
+          <li>
+              <a class="menu_element">Каталог стран</a>
+              <ul>
+                <li><a href="/turkey/turkey.html" title="Подробнее о Турции">Турция</a></li>
+                <li><a href="/oae/oae.html" title="Подробнее об ОАЭ">ОАЭ</a></li>
+                <li><a href="/egypt/egypt.html" title="Подробнее о Египте">Египет</a></li>
+                <li><a href="/greece/greece.html" title="Подробнее о Греции">Греция</a></li>
+                <li><a href="/italy/italy.html" title="Подробнее об Италии">Италия</a></li>
+                <li><a href="/france/france.html" title="Подробнее о Франции">Франция</a></li>
+                <li><a href="/china/china.html" title="Подробнее о Китае">Китай</a></li>
+                <li><a href="/korea/korea.html" title="Подробнее о Корее">Корея</a></li>
+                <li><a href="/vietnam/vietnam.html" title="Подробнее о Вьетнаме">Вьетнам</a></li>
+                <li><a href="/japan/japan.html" title="Подробнее о Японии">Япония</a></li>
+              </ul>
+          </li>
+          <li><a class="menu_element" href="/partners.html" title="Блок с ссылками на партнёров-спонсоров">Партнёры</a></li>
+          <li><a class="menu_element" href="/reviews.html" title="Отзывы о компании">Отзывы</a></li>
+          <li>
+              <a class="menu_element">О компании</a>
+              <ul>
+                  <li><a style="font-size: 18px" href="/feedback.html" title="Ссылка для связи с нами">Обратная связь</a></li>
+                  <li><a href="/qna.html" title="Ответы на часто задаваемые вопросы">Q&A</a></li>
+              </ul>
+          </li>
+          </ul>
+      </nav>
+  </header>
+</div>
+
+<div class="outset">
+  <div class="outset-column">
+    <figure>
+      <a href="https://www.tutu.ru" title="Ссылка на сайт Туту.ру" target="_blank">
+        <img class="outset-logos" src="/main_page/photo/partners/tutu.png" alt="img">
+      </a>
+      <figcaption class="outset-text1-info">tutu</figcaption>
+      <figcaption class="outset-text2-info">сервис продажи билетов на поезда и самолёты</figcaption>
+    </figure>
+  </div>
+
+  <div class="outset-column">
+    <figure>
+      <a href="https://www.aviasales.ru" title="Ссылка на сайт Авиасейлс.ру" target="_blank">
+        <img class="outset-logos" src="/main_page/photo/partners/aviasales.png" alt="img">
+      </a>
+      <figcaption class="outset-text1-info">aviasales</figcaption>
+      <figcaption class="outset-text2-info">метапоисковик авиабилетов</figcaption>
+    </figure>
+  </div>
+
+  <div class="outset-column">
+    <figure>
+      <a href="https://pegas-turistik.ru" title="Ссылка на сайт Пегас-Туристик.ру" target="_blank">
+        <img class="outset-logos" src="/main_page/photo/partners/pegas_touristik.png" alt="img">
+      </a>
+      <figcaption class="outset-text1-info">pegas touristik</figcaption>
+      <figcaption class="outset-text2-info">популярное российское турагенство</figcaption>
+    </figure>
+  </div>
+</div>
+
+<a class="buttons-top-footer" id="toFooter" style="rotate: 180deg" href="#bottom" title="Перейти к низу страницы">^</a>
+<a class="buttons-top-footer" id="toTop" href="#background_main" title="Перейти к верху страницы">^</a>
+
+<h1 class="main-text">Статистика</h1>
+<div class="place-stats">
+  <h2 class="place-stats-text">Категории: <span style="font-size: 45px">развлечения, места Дубая</span></h2>
+  <h2 class="place-stats-text">Стоимость: <span>бесплатно</span></h2>
+  <h2 class="place-stats-text">Часы работы: <span style="font-size: 40px">18:00 – 23:00</span></h2>
+  <h2 class="place-stats-text">Время осмотра: <span>до 5 часов</span></h2>
+  <h2 class="place-stats-text">Адрес: <span style="font-size: 30px">Financial Center Rd - Sheikh Mohammed bin Rashid Boulevard, Dubai</span></h2>
+  <h2 class="place-stats-text">Популярность: <span>10 / 10</span></h2>
+  <h2 class="place-stats-text"><a href="https://vk.cc/cofn4X" title="Ссылка на местоположение фонтана на Яндекс.Картах" target="_blank">Смотреть на карте</a></h2>
+</div>
+<div class="filter-split-line" style="margin-top: -20px"></div>
+
+<h1 class="main-text">Фотогалерея места</h1>
+<div class="carousel-container">
+<div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains1.jpg" alt="img" draggable="false">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains2.jpg" alt="img" draggable="false">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains3.jpg" alt="img" draggable="false">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains4.jpg" alt="img" draggable="false">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains5.jpg" alt="img" draggable="false">
+        <img src="photo/dancing-fountains/carousel/dancing-fountains6.jpg" alt="img" draggable="false">
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+</div>
+</div>
+<div class="filter-split-line"></div>
+
+<h1 class="main-text">Краткая информация о месте</h1>
+  <h2 class="place-info-text">Поющий фонтан в Дубае находится в самом центре крупнейшего города ОАЭ в окружении небоскребов, 
+    ресторанов и торговых центров, относящихся к современному широкофункциональному комплексу Даунтаун Дубай. Фонтан по праву 
+    считается одним из самых высоких и необычных в мире. Его шутеры и подвижные форсунки настолько эффектно выбрасывают и изящно 
+    изгибают водные струи, что в восторг приходят все без исключения зрители шоу. Несколько раз за вечер оригинально подсвеченные 
+    специальными прожекторами Танцующие фонтаны Дубая превращаются в светомузыкальный комплекс, создавая потрясающие композиции. 
+    Сложная конструкция, управляемая автоматикой, расположена в границах искусственного озера, раскинувшегося у подножия Бурдж-Халифа 
+    (или Башни Халифа). На ее фасаде во время грандиозных представлений нередко можно увидеть восхитительные лазерные проекции.</h2>
+
+    <footer class="footer-main">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h1 style="margin-left: 30px">Каталог стран</h1>
+              <ul style="margin-left: 30px">
+                <li><a href="/turkey/turkey.html" title="Подробнее об ОАЭ">- Турция</a></li>
+                <li><a href="/oae/oae.html" title="Подробнее об ОАЭ">- ОАЭ</a></li>
+                <li><a href="/egypt/egypt.html" title="Подробнее о Египте">- Египет</a></li>
+                <li><a href="/greece/greece.html" title="Подробнее о Греции">- Греция</a></li>
+                <li><a href="/italy/italy.html" title="Подробнее об Италии">- Италия</a></li>
+                <li><a href="/france/france.html" title="Подробнее о Франции">- Франция</a></li>
+                <li><a href="/china/china.html" title="Подробнее о Китае">- Китай</a></li>
+                <li><a href="/korea/korea.html" title="Подробнее о Корее">- Корея</a></li>
+                <li><a href="/vietnam/vietnam.html" title="Подробнее о Вьетнаме">- Вьетнам</a></li>
+                <li><a id="bottom" href="/japan/japan.html" title="Подробнее о Японии">- Япония</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h1>О компании</h1>
+              <ul>
+                <li><a href="/reviews.html" title="Напишите отзыв о нас">- Отзывы</a></li>
+                <li><a href="/feedback.html" title="Ссылка для связи с нами">- Обратная связь</a></li>
+                <li><a href="/qna.html" title="Ответы на часто задаваемые вопросы">- Q&A</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h1 style="margin-left: 30px">Партнёры</h1>
+              <ul style="margin-left: 30px">
+                <li><a href="https://www.tutu.ru" title="Ссылка на сайт Туту.ру">- Туту</a></li>
+                <li><a href="https://www.aviasales.ru" title="Ссылка на сайт Авиасейлс.ру">- Авиасейлс</a></li>
+                <li><a href="https://pegas-turistik.ru" title="Ссылка на сайт Пегас-Туристик.ру">- Пегас туристик</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-col">
+              <h1>Контактная информация</h1>
+              <div class="social-links">
+                <a class="social-media" href="https://vk.com/nnbezgalochki" title="Группа компании ВКонтакте" target="_blank"><i class="fab fa-vk"></i></a>
+                <a class="social-media" href="https://web.telegram.org" title="Группа компании в телеграме" target="_blank"><i class="fa fa-solid fa-paper-plane"></i></a>
+                <a class="social-media" href="https://www.youtube.com" title="Канал компании на YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="social-media" href="https://ok.ru/" title="Группа компании в одноклассниках" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+                <h4 style="color: #fff; padding-bottom: 10px"><i class="fa fa-solid fa-envelope"></i> travel.ru@yandex.ru</h4>
+                <h4 style="color: #fff"><i class="fa fa-solid fa-phone"></i> +79876543210</h4>
+                <a href="\" title="Вернуться на Главную страницу" style="color: #fff; line-height: 70px; margin-left: 15 0px"><i class="fa fa-home"></i></a>
+                <a href="/sitemap.html" title="Просмотреть карту сайта" style="color: #fff; line-height: 70px;"><i class="fa fa-sitemap"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/search.js" defer></script>
+  <script src="/js/carousel.js" defer></script>
+</body>
+</html>
